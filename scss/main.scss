@@ -6,7 +6,7 @@ html{
     min-height: 100%;
 }
 main{
-    margin-bottom: 250px;
+    margin-bottom: 270px;
     
 }
 footer.footer{
@@ -23,6 +23,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
     content: "";
     position:absolute;
@@ -43,4 +44,59 @@ p{
     align-items: center;
     justify-content: center;
 }
+}
+.text-justify{
+    text-align: justify;
+}
+
+.image-card{
+    position: relative;
+    &:hover{
+        .titre-image{
+            opacity: 1;
+        }
+        img{
+            filter: brightness(0.3);
+        }
+.action-image-buttons{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+    }
+
+    img{
+        transition: all 0.8s ease;
+    }
+
+    .titre-image{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        font-family: $font-family-serif;
+        font-size: 18px;
+        transition: all 0.8s ease;
+        white-space: nowrap; // Added to ensure text is in a single line
+    
+    }
+}
+
+.acc{
+    filter: brightness(0.7);
+}
+
+.form-label{
+    font-weight: bold;
+    color: $primary;
+}
+
+.modal{
+        animation: ease-in 1s;
+
 }

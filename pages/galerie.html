@@ -1,0 +1,130 @@
+<div class="hero-scene text-center text-white">
+    <div class="text-center hero-scene-content">
+
+    <h1>Galerie</h1>
+    </div>
+</div>
+
+<div class="container pt-4 pb-4">
+    <div class="text-center">
+        <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">Ajouter une photo</button>
+    </div>
+    <h2 class="text-center pt-4">Les photos</h2>
+    <div class="row row-cols-2 row-cols-lg-3">
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img class="w-100 rounded" src="../images/L'Aube Safranée.png">
+                <p class="titre-image">L'Aube Safranee</p>
+            <div class="action-image-buttons">
+                <button  type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                <button  type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+            </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img class="w-100 rounded" src="../images/Le Nuage de Vénus.png">
+                <p class="titre-image">Le Nuage de Vénus</p>
+                            <div class="action-image-buttons">
+                <button  type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                <button  type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+            </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img class="w-100 rounded" src="../images/Le Manteau Royal.png">
+                <p class="titre-image">Le Manteau Royal</p>
+                            <div class="action-image-buttons">
+                <button  type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                <button  type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+            </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img class="w-100 rounded" src="../images/Le Nuage de Vénus.png">
+                <p class="titre-image">Le Nuage de Vénus</p>
+                            <div class="action-image-buttons">
+                <button  type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                <button  type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+            </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img class="w-100 rounded" src="../images/Le Voile des Sous-Bois.png">
+                <p class="titre-image">Le Voile des Sous-Bois</p>
+                            <div class="action-image-buttons">
+                <button  type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                <button  type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+            </div>
+            </div>
+        </div>
+        <div class="col p-3">
+            <div class="image-card text-white">
+                <img class="w-100 rounded" src="../images/Les Perles de Bacchus.png">
+                <p class="titre-image">Les Perles de Bacchus</p>
+                            <div class="action-image-buttons">
+                <button  type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                <button  type="button" class="btn btn-outline-light"data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+            </div>
+            </div>
+        </div>
+    </div>
+        <div class="text-center">
+        <a href="#" class="btn btn-primary">Reserver</a>
+    </div>
+</div>
+<!-- Modal Edition Photo -->
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionPhotoModal">Edition photo</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3 pt-3">
+    <label for="NamePhotoInput" class="form-label">Titre</label>
+    <input type="email" class="form-control" id="NamePhotoInput" placeholder="Lasagne a la bolognaise">
+    </div>
+  
+  <div class="mb-3">
+    <label for="ImageInput" class="form-label">Image</label>
+    <input type="file" class="form-control" id="ImageInput">
+  </div>
+  <div class="text-center">
+    <button type="button" class="btn btn-primary">Enregistrer</button>
+</div>
+</form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--  Modal suprimer -->
+  <div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="DeletePhotoModall">Etes-vous sur de voulour supprimer cette photo</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3 pt-3">
+    <p>Titre</p>
+    <img class="w-100 rounded" src="../images/Les Perles de Bacchus.png">
+    </div>
+  <div class="text-center">
+    <button type="button" class="btn btn-danger">Suprimer</button>
+    <button type="button" class="btn btn-secundary" data-bs-dismiss="modal">anuller</button>
+</div>
+</form>
+      </div>
+
+    </div>
+  </div>
+</div>
